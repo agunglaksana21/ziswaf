@@ -286,7 +286,6 @@ body{
 }
 .card-wrapping .wrapper-card{
     width: 357.33px;
-    height: 440.33px;
     box-shadow: 0 4px 6px rgba(0,0,0,.1);
     border-radius: 10px;
     overflow:hidden; 
@@ -340,6 +339,7 @@ body{
     justify-content: center; 
     align-items: center; 
     width: 100%;
+    margin-bottom: 1rem;
 }
 .card-text-button{
     display: flex;  
@@ -347,17 +347,17 @@ body{
     align-items: center;
     width: 90%;
     height: 38px;
+    margin-bottom: 10px;
 }
 .card-text-button .card-button{
-    background-color: #00B532;
-    border-radius: 4px;
     width: 100%;
-    display: flex;  
-    height: 38px;
-    justify-content: center;
-    align-items: center;
 }
 .card-text-button a{
+    background-color: #00B532;
+    border-radius: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
     text-decoration: none;
     color: #FFFFFF;
     font-size: 11.25px;
@@ -504,7 +504,6 @@ body{
 }
 .custom-container-haightlight .wrapper-highlight .wrapper-card{
     width: 301.25px; 
-    height: 336.75px; 
     flex-direction: column; 
     display: flex;
     gap: 10px;
@@ -607,6 +606,22 @@ body{
         font-size: 15px!important;
         width: 80%!important;
     }
+    /* quotes */
+    /* .wrapper-quotes-info .quotes-info-text .quotes-top{
+        font-size: 20px !important;
+    }
+    .wrapper-quotes-info .quotes-info-text .quotes-bottom{
+        font-size: 10px !important;
+    } */
+}
+@media screen and (max-width: 405px) {
+/* quotes */
+    .wrapper-quotes-info .quotes-info-text .quotes-top{
+        font-size: 21px !important;
+    }
+    .wrapper-quotes-info .quotes-info-text .quotes-bottom{
+        font-size: 11px !important;
+    }
 }
 @media screen and (max-width: 481px) {
 /* bgzakat */
@@ -615,7 +630,7 @@ body{
         width: 100%;
     }
     .position-relative .custom-text-top{
-        font-size: 30px!important;
+        font-size: 25px!important;
         font-weight: 700;
     }  
     .position-relative .wrapper-text{
@@ -628,7 +643,7 @@ body{
         padding: 0;
     }
     .position-relative .custom-text-bottom{
-        font-size: 15px!important;
+        font-size: 12px!important;
         font-weight: 500;
         width: 100%;
     }
@@ -657,10 +672,10 @@ body{
         font-weight: 400;
     }
     .quotes-info-text .quotes-top{
-        font-size: 20px;
+        font-size: 25px !important;
     }
     .quotes-info-text .quotes-bottom{
-        font-size: 10px;
+        font-size: 13px !important;
     }
     /* youtube */
     .wrapper-youtube{
@@ -924,5 +939,19 @@ body{
     }
     .container.custom-container-haightlight{
         margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-custom {
+        display: flex !important;
+        flex-direction: column !important;
+    } 
+    .navbar-custom .d-block{
+        margin: 0 !important;
+    }
+    .navbar-custom .wrapper-navbar-login{
+        display: flex !important;
+        justify-content: flex-end !important;
     }
 }
